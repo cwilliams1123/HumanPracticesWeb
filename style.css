@@ -1,0 +1,234 @@
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('https://cdn.sanity.io/images/0vv8moc6/pharmexec/264d854b524503cb49398305c39676b46ca91662-1280x720.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Display header and container in a column layout */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+h2 {
+    color: #eeeded;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: sans-serif;
+    color: #ea6e6e;
+    text-shadow: 0px 0px 1px rgba(222, 219, 219, 0.5);
+    text-align: center;
+}
+.startingInfo {
+    padding: 20px;
+    margin: 20%; /* Add margin to create space */
+    max-width: 100%; /* Adjust the maximum width for the container */
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: relative;
+    background-color: #fafafa01;
+    color: rgb(254, 253, 253);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    flex: 1;
+    margin-right: 20px;
+    margin-top: -15%;
+    font-size: 24px;
+    transition: text-shadow 0.3s;
+}
+
+.header:hover {
+    text-shadow: 0 0 20px rgb(2, 2, 2); /* Adjust the shadow color and size */
+}
+
+.header h1{
+    font-size: 150px;
+}
+
+
+.stats {
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+    color: rgb(7, 7, 7);
+    background-color: white;
+    border-radius: 10px; 
+    margin-top: 20%;
+}
+
+.stats h2{
+    color: black;
+    text-shadow: none ;
+}
+
+.stats p{
+    text-align: left;
+    font-weight: bold;
+}
+
+.sections {
+    margin: 10px; /* Add margin to create space */
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    color: rgb(7, 7, 7);
+    text-align: left;
+}
+
+.sections h2 {
+    background-color: #ea6e6e;
+    color: #000000;
+    padding: 20px;
+    text-align: left;
+    text-shadow: none;
+    font-size: 35px;
+}
+
+.sections p {
+    font-size: 18px;
+}
+.quotes h2 {
+    font-size: 40px;
+    text-align: center;
+    width: 300px;
+    margin-top: 5%;
+}
+
+.quotes {
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 15%;
+    padding: 50px; /* Add padding to the .quotes container */
+    display: flex; /* Make the .quotes container a flex container */
+    flex-wrap: wrap; /* Allow quotes to wrap to the next line if needed */
+    justify-content: space-between; /* Space quotes evenly */
+    width: 90%;
+}
+
+.quote {
+    flex: 1; /* Allow each quote to take an equal portion of space */
+    max-width: calc(50% - 20px); /* Set a maximum width for each quote box (50% of container width with margin) */
+    text-align: center;
+    margin: 2%;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+blockquote {
+    font-style: italic;
+    font-size: 18px;
+    margin: 0;
+
+}
+
+.author {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .startingInfo {
+        flex-direction: column; /* Stack the header and stats vertically on smaller screens */
+    }
+
+    .header {
+        margin-bottom: 20px; /* Add some spacing between the header and stats */
+    }
+}
+/* Style the navigation bar */
+.navbar {
+    padding: 10px 0; /* Add some padding to the top and bottom */
+    text-align: right; /* Right-align the links */
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+/* Style the navigation list */
+.nav-list {
+    list-style: none; /* Remove the default list styles */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Style the navigation links */
+.nav-list li {
+    display: inline; /* Display the list items horizontally */
+    margin-left: 50px; /* Add spacing between links */
+}
+
+.nav-list li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Text color for the links */
+    font-weight: bold;
+}
+
+.nav-list li a:hover {
+    color: #ffc107; /* Text color for links on hover */
+}
+
+.literature-summary {
+    background-color: white;
+    margin: 20px 0;
+
+    border-radius: 5px;
+}
+
+.literature-summary h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: left;
+    text-shadow: none;
+    background-color: #ddd;
+}
+
+.literature-summary h3 {
+    font-size: 24px;
+    color: black;
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.literature-summary p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
